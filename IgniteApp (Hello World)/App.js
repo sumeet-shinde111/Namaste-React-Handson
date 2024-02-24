@@ -1,4 +1,4 @@
-const heading = React.createElement("h1",{},"This is hello from React!!");
+const heading = React.createElement("h1",{id:"heading", class:"title",xyz:"ABC"},"This is hello from React!!");
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,5 +33,11 @@ React.createElement takes 3 arguments:
 3) We have created an h1 tag and root as well now we have to append that and render it to do so use render method from
    reactDOM.
    i.e root.render(heading);
+
+4) In createElement (tag, {}, "innerhtml text") the second  parameter "{}"" is object which takes attributes i.e id,class etc.
+    const heading = React.createElement("h1",
+                                        {id:"heading", class:"title", xyz:"ABC"},
+                                        "This is hello from React!!");
+
 
 */
