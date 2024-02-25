@@ -4,13 +4,20 @@ Create this structure in react :
     <div id="parent">
         <div id="child">
             <h1></h1>
+            <h2></h2>
         </div>
     </div>
 
 
 */
 
-const parent = React.createElement("div",{id:"parent"},React.createElement("div",{id:"child"},React.createElement("h1",{},"This is a h1 tag!!")))
+const parent = React.createElement("div",{id:"parent"},React.createElement("div",{id:"child"},
+                                                      [
+                                                        React.createElement("h1",{},"This is a h1 tag!!"),
+                                                        React.createElement("h2",{},"This is a h2 tag!!"),
+                                                        React.createElement("h3",{},"This is a h3 tag!!")
+                                                      ]
+                                                    ))
 
 
 const heading = React.createElement("h1", { id: "heading", class: "title", xyz: "ABC" }, "This is hello from React!!");
