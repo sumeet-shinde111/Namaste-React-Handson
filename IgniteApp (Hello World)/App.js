@@ -1,25 +1,32 @@
 import React from 'react';
 import ReactDOM from "react-dom/client";
 
-const jsxHeading = <h1>Hello from jsx </h1>
-
-//creating functional component in react
-
-const Title = ()=>{
+const Header = ()=>{
     return(
-        <>
-            functional component in react...
-        </>
+        <div className='header'>
+            <div className='logo-container'>
+                <img src='https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png' alt='logo' className='logo'></img>
+            </div>
+            <div className='nav-items'>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact us</li>
+                    <li>Cart</li>
+                </ul>
+
+            </div>
+        </div>
     )
 }
-//Component compoition is combining 2 components in single like heading has title component inside it
-const Heading = ()=>{
+
+const AppLayout = ()=>{
     return(
-        <div className='parent'>
-            <h1>This is  <Title/> </h1>
+        <div className='app'>
+            <Header/>
         </div>
     )
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Heading/>); 
+root.render(<AppLayout/>); 
