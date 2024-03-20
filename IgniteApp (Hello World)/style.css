@@ -1,3 +1,4 @@
+/* header */
 .header{
     justify-content: space-between;
     display: flex;
@@ -31,4 +32,62 @@
 li:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+
+/* body */
+.body{
+    padding: 5px 10px;
+}
+
+/* search */
+
+.search{
+    padding: 10px;
+}
+
+/* RestuarantCard */
+
+.res-container{
+    padding: 5px 0;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.res-card{
+    width: 250px;
+    border: 1px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.res-card:hover{
+    transition: all 0.05s ease 0s;
+}
+
+.dishImage{
+    width: 100%;
+    height: 210px;
+    border-radius: 5px 5px 0 0;
+}
+.heading{
+    margin: 2px 0;
+}
+.cuisines{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    padding: 5px;
+}
+.rating-delivery_wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 10px;
 }
